@@ -9,23 +9,32 @@ body{
     display: flex;
     align-items: center;
 }
-#loginSection{
+
+a{
+    color: inherit;
+    text-decoration: underline rgba(255,255,255,0);
+}
+a:hover{
+    transition: ease-in-out 0.5s;
+    text-decoration: underline rgba(255,255,255,1);
+}
+#loginSection, #registerSection{
     background-color: #1E233D;
     border-radius: 20px;
     max-width: 625px;
     width: 80%;
-    max-height: 785px;
-    height: 80%;
+    height: 785px;
     margin-left: 110px;
-    padding: 20 px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: white;
 }
-#loginSection label{
+#loginSection label, #registerSection label{
     width: fit-content;
 }
-#loginSection h1{
+#loginSection h1, #registerSection h1{
     font-family: "Lalezar", system-ui;
     font-size: 64px;
     width: 100%;
@@ -33,26 +42,77 @@ body{
     margin: 80px 0 0 0;
 
 }
-#loginSection .Input{
+#loginSection .Input, #registerSection .Input{
     display: flex;
     flex-direction: column;
     width: 90%;
     margin:0 0 20px 20px;
-
 }
-#loginSection .Input label{
+#loginSection .Input label, #registerSection .Input label{
     font-family: "Lalezar", system-ui;
     font-size: 36px;
+    margin-top: 20px;
 }
-#loginSection .Input input{
+#loginSection .Input input, #registerSection .Input input{
     background-color: white;
     max-width:585px;
     height: 50px;
     border-radius: 20px;
     border: none;
 }
-#remember-me{
-    float: right;
+#registerSection{
+    margin: 0 auto;
+    height: fit-content;
+}
+#loginOptions{
+    position: relative;
+    width: 70%;
+    margin:20px 0;
+    display: flex;
+    flex-direction: row;
+}
+#loginOptions a{
+    position: absolute;
+    right: 0;
+}
+#loginOptions a, #loginOptions label{  
+    font-size: 20px;
+}
+#loginForms{
+    width: 50px;
+    height: 50px;
+}
+.logRegButton{
+    border:none;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.logRegButton:hover{
+    transition: ease-in-out 0.5s;
+    background-color: rgba(255,255,255,0.8);
+
+}
+#loginForms ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+#loginForms img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 20px 20px;
+}
+#loginForms{
+    width: 80%;
+    height: 100px;
 }
 .lalezar-regular {
     font-family: "Lalezar", system-ui;

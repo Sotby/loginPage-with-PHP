@@ -3,21 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
     <title>Web Desings</title>
 </head>
 <body>
     
-    <section id="loginSection">
-        <h1>Login</h1>
-        <label for="uName">Username</label>
-        <input type="text" placeholder="Enter Username or Email" name="uName" required>
-        <label for="psw">Password</label>
-        <input type="text" placeholder="Enter Password" name="psw" required>
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remeber"> Remember me 
-        </label>  
+    <section id="registerSection">
+        <h1>Web Desings</h1>
+        <a href="" class="logo">
+            <img src="" alt="">
+        </a>    
+        <form action="./php/register.php" method="POST" class="Input">
+            <label for="uName">Nome de usuário</label>
+            <input type="text" name="uName" required>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" required>
+            <label for="psw">Senha</label>
+            <input type="password" name="psw" required>
+            <label for="psw">Confirmar Senha</label>
+            <input type="password" name="psw_confirm" required>
+            <button type="submit" class="logRegButton" id="RegButton">Registrar-se</button>
+        </form>
+        <Span>Já tem uma conta? <a href="login.html">Faça login</a></Span>
+        <div id="loginForms">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./assets/google-icon-2048x2048-pks9lbdv.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/2023_Facebook_icon.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/vetor-de-ilustracao-do-icone-do-logotipo-do-twitter_895118-5886.avif" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-
 </body>
 </html>

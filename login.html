@@ -10,41 +10,45 @@
     <title>Web Desings</title>
 </head>
 <body>
-    
     <section id="loginSection">
-        <h1>Login</h1>
+        <h1>Web Desings</h1>
         <a href="" class="logo">
             <img src="" alt="">
         </a>    
-        <div class="Input">
+        <form action="./php/login.php" method="POST" class="Input">
             <label for="uName">Email ou Nome de usuário</label>
             <input type="text" name="uName" required>
             <label for="psw">Senha</label>
-            <input type="text" name="psw" required>
+            <input type="password" name="psw" required>
+            <button type="submit" class="logRegButton" id="logButton">Login</button>
+        </form>        
+        <div id="loginOptions">
+            <label id="remember-me">
+                <input type="checkbox" checked="checked" name="remeber">Lembrar Senha
+            </label>
+            <div class="brake"></div>
+            <a href="" id="forgotpass">Esqueci minha senha</a>
         </div>
-        <label id="remember-me">
-            <input type="checkbox" checked="checked" name="remeber"> Remember me 
-        </label>
-        <button type="submit">Login</button>
-        <Span>Sem conta? <a href="">Registre-se</a></Span>
-        <ul id="loginForms">
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="" alt="">
-                </a>
-            </li>
-        </ul>
+        <Span>Sem conta? <a href="register.html" class="Dlink">Registre-se</a></Span>
+        <div id="loginForms">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./assets/google-icon-2048x2048-pks9lbdv.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/2023_Facebook_icon.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/vetor-de-ilustracao-do-icone-do-logotipo-do-twitter_895118-5886.avif" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-
 </body>
 </html>
